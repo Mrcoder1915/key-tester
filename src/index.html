@@ -15,7 +15,6 @@
         <div class="w-[50px] h-[50px] text-2xl text-white font-bold bg-black flex justify-center items-center">Ctrl</div>
         <div class="w-[50px] h-[50px] text-2xl text-black font-bold  flex justify-center items-center">+</div>
         <div class="w-[70px] h-[50px] text-1xl text-white font-bold bg-black flex justify-center items-center">KEY</div>
-
     </div>
     <div class="w-[100%] absolute top-20 flex justify-center">
         <h2 class="font-bold text-2xl">Fn key is natural not detected</h2>
@@ -152,25 +151,5 @@
 </body>
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
- <script>
-document.addEventListener('keyup', (ev) => {
-    console.log(ev)
-    const button = document.querySelectorAll('button');
-    const sub = document.querySelector('#numsub');
-    const keycode = { 'Escape': 0, 'F1': 1, 'F2': 2, 'F3':3, 'F4': 4, 'F5': 5, 'F6': 6, 'F7':7, 'F8':8, 'F9': 9, 'F10': 10, 'F11': 11, 'F12':12, 'PrintScreen':13, 'ScrollLock':14,
-                  'Pause':15, 'Backquote':16, 'Digit1': 17, 'Digit2': 18, 'Digit3':19, 'Digit4': 20, 'Digit5': 21, 'Digit6': 22, 'Digit7':23, 'Digit8':24, 'Digit9': 25, 'Digit0': 26,
-                  'Minus':27 , 'Equal':28, 'Backspace':29, 'Insert':30, 'Home':31, 'PageUp':32, 'NumLock':33, 'NumpadDivide':34, 'NumpadMultiply':35, 'NumpadSubtract':36, 
-                  'Tab':37, 'KeyQ':38, 'KeyW':39, 'KeyE':40, 'KeyR':41, 'KeyT':42, 'KeyY':43, 'KeyU':44, 'KeyI':45, 'KeyO':46, 'KeyP':47, 'BracketLeft':48, 'BracketRight':49,
-                  'Backslash':50, 'Delete':51, 'End':52, 'PageDown':53, 'Numpad7':54, 'Numpad8':55, 'Numpad9':56, 'NumpadAdd':57, 'CapsLock':58, 'KeyA':59, 'KeyS':60,
-                  'KeyD':61, 'KeyF':62, 'KeyG':63, 'KeyH':64, 'KeyJ':65, 'KeyK':66, 'KeyL':67, 'Semicolon':68, 'Quote':69, 'Enter':70, 'Numpad4':71, 'Numpad5':72, 'Numpad6':73,
-                  'ShiftLeft':74, 'KeyZ':75, 'KeyX':76, 'KeyC':77, 'KeyV':78, 'KeyB':79, 'KeyN':80, 'KeyM':81, 'Comma':82, 'Period':83, 'Slash':84, 'ShiftRight':85, 'ArrowUp':86,
-                  'Numpad1':87, 'Numpad2':88, 'Numpad3':89, 'NumpadEnter':90, 'ControlLeft':91, 'MetaLeft':92, 'AltLeft':93, 'Space':94, 'AltRight':95, 'ContextMenu':97, 'ControlRight':98,
-                  'ArrowLeft':99, 'ArrowDown':100, 'ArrowRight':101, 'Numpad0':102, 'NumpadDecimal':103};
-    const index = keycode[ev.code];
-    if (index !== null) {
-        button[index].classList.add('click');
-        setTimeout(() => button[index].classList.remove('click'), 3000);
-    } 
-});
- </script>
+<script src="script.js"></script>
 </html>
