@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Key Test</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="w-[100%] absolute top-0 flex justify-center items-center mt-3">
+        <h1 class="mr-5 text-2xl font-bold font-serif">If Not working Try this</h1>
+        <div class="w-[50px] h-[50px] text-2xl text-white font-bold bg-black flex justify-center items-center">Alt</div>
+        <div class="w-[50px] h-[50px] text-2xl text-black font-bold flex justify-center items-center">+</div>
+        <div class="w-[50px] h-[50px] text-2xl text-white font-bold bg-black flex justify-center items-center">Ctrl</div>
+        <div class="w-[50px] h-[50px] text-2xl text-black font-bold  flex justify-center items-center">+</div>
+        <div class="w-[70px] h-[50px] text-1xl text-white font-bold bg-black flex justify-center items-center">KEY</div>
+
+    </div>
+    <div class="w-[100%] absolute top-20 flex justify-center">
+        <h2 class="font-bold text-2xl">Fn key is natural not detected</h2>
+    </div>
+    <div id="shadow" class = "max-w-[90%] fixed max-h-[60%] p-7  bg-black   flex flex-col sha">
+        <div class="w-[100%]  flex flex-row gap-2"> 
+            <button class="w-[50px] h-[50px] text-2xl font-bold bg-white mr-14">Esc</button>
+            <button class="w-[50px] h-[50px] text-2xl font-bold bg-white">F1</button>
+            <button class="w-[50px] h-[50px] text-2xl font-bold bg-white">F2</button>
+            <button class="w-[50px] h-[50px] text-2xl font-bold bg-white">F3</button>
+            <button class="w-[50px] h-[50px] text-2xl font-bold bg-white mr-5">F4</button>
+            <button class="w-[50px] h-[50px] text-2xl font-bold bg-white">F5</button>
+            <button class="w-[50px] h-[50px] text-2xl font-bold bg-white">F6</button>
+            <button class="w-[50px] h-[50px] text-2xl font-bold bg-white">F7</button>
+            <button class="w-[50px] h-[50px] text-2xl font-bold bg-white mr-5">F8</button>
+            <button class="w-[50px] h-[50px] text-2xl font-bold bg-white">F9</button>
+            <button class="w-[50px] h-[50px] text-2xl font-bold bg-white">F10</button>
+            <button class="w-[50px] h-[50px] text-2xl font-bold bg-white">F11</button>
+            <button class="w-[50px] h-[50px] text-2xl font-bold bg-white mr-5">F12</button>
+            <button class="w-[50px] h-[50px] text-1xl font-bold bg-white">PrtSc<Br/>SysRq</button>
+            <button class="w-[50px] h-[50px] text-1xl font-bold bg-white">Scroll<br/>Lock</button>
+            <button class="w-[50px] h-[50px] text-1xl font-bold bg-white">Pause<br/>Break</button>
+        </div>
+        <div class="w-[100%] flex flex-row gap-2 mt-7"> 
+            <button class="w-[50px] h-[50px] text-2xl font-bold bg-white ">~<br/>`</button>
+            <button class="w-[50px] h-[50px] text-2xl font-bold bg-white ">1</button>
+            <button class="w-[50px] h-[50px] text-2xl font-bold bg-white">2</button>
+            <button class="w-[50px] h-[50px] text-2xl font-bold bg-white">3</button>
+            <button class="w-[50px] h-[50px] text-2xl font-bold bg-white">4</button>
+            <button class="w-[50px] h-[50px] text-2xl font-bold bg-white">5</button>
+            <button class="w-[50px] h-[50px] text-2xl font-bold bg-white">6</button>
+            <button class="w-[50px] h-[50px] text-2xl font-bold bg-white">7</button>
+            <button class="w-[50px] h-[50px] text-2xl font-bold bg-white">8</button>
+            <button class="w-[50px] h-[50px] text-2xl font-bold bg-white">9</button>
+            <button class="w-[50px] h-[50px] text-2xl font-bold bg-white">0</button>
+            <button class="w-[50px] h-[50px] text-2xl font-bold bg-white">-</button>
+            <button class="w-[50px] h-[50px] text-2xl font-bold bg-white">+</button>
+            <button class="w-[90px] h-[50px] text-2xl font-bold bg-white mr-5">Back</button>
+            <button class="w-[50px] h-[50px] text-2xl font-bold bg-white">Ins</button>
+            <button class="w-[50px] h-[50px] text-1xl font-bold bg-white">Home</button>
+            <button class="w-[50px] h-[50px] text-1xl font-bold bg-white mr-5">PgUp</button>
+            <button class="w-[50px] h-[50px] text-1xl font-bold bg-white">Num<br/>Lock</button>
+            <button class="w-[50px] h-[50px] text-2xl font-bold bg-white">/</button>
+            <button class="w-[50px] h-[50px] text-2xl font-bold bg-white">*</button>
+            <button id 'numsub' class="w-[50px] h-[50px] text-2xl font-bold bg-white">-</button>
+
+        </div>
+        <div class="w-[100%] h-[50px] flex flex-row gap-2 mt-1"> 
+            <button class="w-[80px] h-[50px] text-2xl font-bold bg-white ">Tab</button>
+            <button class="w-[50px] h-[50px] text-2xl font-bold bg-white ">Q</button>
+            <button class="w-[50px] h-[50px] text-2xl font-bold bg-white">W</button>
+            <button class="w-[50px] h-[50px] text-2xl font-bold bg-white">E</button>
+            <button class="w-[50px] h-[50px] text-2xl font-bold bg-white">R</button>
+            <button class="w-[50px] h-[50px] text-2xl font-bold bg-white">T</button>
+            <button class="w-[50px] h-[50px] text-2xl font-bold bg-white">Y</button>
+            <button class="w-[50px] h-[50px] text-2xl font-bold bg-white">U</button>
+            <button class="w-[50px] h-[50px] text-2xl font-bold bg-white">I</button>
+            <button class="w-[50px] h-[50px] text-2xl font-bold bg-white">O</button>
+            <button class="w-[50px] h-[50px] text-2xl font-bold bg-white">P</button>
+            <button class="w-[50px] h-[50px] text-2xl font-bold bg-white">{ [</button>
+            <button class="w-[50px] h-[50px] text-2xl font-bold bg-white">} ]</button>
+            <button class="w-[60px] h-[50px] text-2xl font-bold bg-white mr-5">| \</button>
+            <button class="w-[50px] h-[50px] text-2xl font-bold bg-white">Del</button>
+            <button class="w-[50px] h-[50px] text-1xl font-bold bg-white">End</button>
+            <button class="w-[50px] h-[50px] text-1xl font-bold bg-white mr-5">PgDn</button>
+            <button class="w-[50px] h-[50px] text-2xl font-bold bg-white">7</button>
+            <button class="w-[50px] h-[50px] text-2xl font-bold bg-white">8</button>
+            <button class="w-[50px] h-[50px] text-2xl font-bold bg-white">9</button>
+            <button class="w-[50px] h-[104px] text-2xl font-bold bg-white">+</button>
+        </div>
+        <div class="w-[100%] flex flex-row gap-2 mt-1"> 
+            <button class="w-[110px] h-[50px] text-2xl font-bold bg-white ">Caps</button>
+            <button class="w-[50px] h-[50px] text-2xl font-bold bg-white ">A</button>
+            <button class="w-[50px] h-[50px] text-2xl font-bold bg-white">S</button>
+            <button class="w-[50px] h-[50px] text-2xl font-bold bg-white">D</button>
+            <button class="w-[50px] h-[50px] text-2xl font-bold bg-white">F</button>
+            <button class="w-[50px] h-[50px] text-2xl font-bold bg-white">G</button>
+            <button class="w-[50px] h-[50px] text-2xl font-bold bg-white">H</button>
+            <button class="w-[50px] h-[50px] text-2xl font-bold bg-white">J</button>
+            <button class="w-[50px] h-[50px] text-2xl font-bold bg-white">K</button>
+            <button class="w-[50px] h-[50px] text-2xl font-bold bg-white">L</button>
+            <button class="w-[50px] h-[50px] text-2xl font-bold bg-white">: ;</button>
+            <button class="w-[50px] h-[50px] text-2xl font-bold bg-white">" '</button>
+            <button class="w-[88px] h-[50px] text-2xl font-bold bg-white mr-[210px]">Enter</button>
+            <button class="w-[50px] h-[50px] text-2xl font-bold bg-white ml-1">4</button>
+            <button class="w-[50px] h-[50px] text-2xl font-bold bg-white">5</button>
+            <button class="w-[50px] h-[50px] text-2xl font-bold bg-white">6</button>
+        </div>
+        <div class="w-[100%] h-[50px] flex flex-row gap-2 mt-1"> 
+            <button class="w-[140px] h-[50px] text-2xl font-bold bg-white ">Shift</button>
+            <button class="w-[50px] h-[50px] text-2xl font-bold bg-white ">Z</button>
+            <button class="w-[50px] h-[50px] text-2xl font-bold bg-white">X</button>
+            <button class="w-[50px] h-[50px] text-2xl font-bold bg-white">C</button>
+            <button class="w-[50px] h-[50px] text-2xl font-bold bg-white">V</button>
+            <button class="w-[50px] h-[50px] text-2xl font-bold bg-white">B</button>
+            <button class="w-[50px] h-[50px] text-2xl font-bold bg-white">N</button>
+            <button class="w-[50px] h-[50px] text-2xl font-bold bg-white">M</button>
+            <button class="w-[50px] h-[50px] text-2xl font-bold bg-white">, > </button>
+            <button class="w-[50px] h-[50px] text-2xl font-bold bg-white">. ></button>
+            <button class="w-[50px] h-[50px] text-2xl font-bold bg-white">/ ?</button>
+            <button class="w-[117px] h-[50px] text-2xl font-bold bg-white">Shift</button>
+            <button class="w-[50px] h-[50px] text-2xl font-bold bg-white ml-20 mr-3"><ion-icon name="arrow-up-outline"></ion-icon></button>
+            <button class="w-[50px] h-[50px] text-2xl font-bold bg-white ml-16">1</button>
+            <button class="w-[50px] h-[50px] text-2xl font-bold bg-white">2</button>
+            <button class="w-[50px] h-[50px] text-2xl font-bold bg-white">3</button>
+            <button class="w-[50px] h-[103px] text-1xl font-bold bg-white">Enter</button>
+           
+        </div>
+        <div class="w-[100%] flex flex-row gap-2 mt-1">             
+            <button class="w-[110px] h-[50px] text-2xl font-bold bg-white ">Ctrl</button>
+            <button class="w-[50px] h-[50px] text-2xl font-bold bg-white "><ion-icon name="logo-windows"></ion-icon></button>
+            <button class="w-[50px] h-[50px] text-2xl font-bold bg-white">Alt</button>
+            <button class="w-[350px] h-[50px] text-2xl font-bold bg-white">space</button>
+            <button class="w-[50px] h-[50px] text-2xl font-bold bg-white">Alt</button>
+            <button class="w-[50px] h-[50px] text-2xl font-bold bg-white">Fn</button>
+            <button class="w-[50px] h-[50px] text-2xl font-bold bg-white"><ion-icon name="book"></ion-icon></button>
+            <button class="w-[79px] h-[50px] text-2xl font-bold bg-white">Ctrl</button>
+            <button class="w-[50px] h-[50px] text-2xl font-bold bg-white ml-[21px]"><ion-icon name="arrow-back-outline"></ion-icon></button>
+            <button class="w-[50px] h-[50px] text-2xl font-bold bg-white"><ion-icon name="arrow-down-outline"></ion-icon></button>
+            <button class="w-[50px] h-[50px] text-2xl font-bold bg-white"><ion-icon name="arrow-forward-outline"></ion-icon></button>
+            <button class="w-[108px] h-[50px] text-2xl font-bold bg-white ml-[19px]">Ins</button>
+            <button class="w-[50px] h-[50px] text-2xl font-bold bg-white">Del</button>
+        </div>
+        <div class="w-[100%] flex justify-center mt-2">
+            <h1 class="name text-3xl font-extrabold font-serif">Sammy Navarrro</h1>
+        </div>
+    </div>
+     <div class="w-[100%] text-black absolute bottom-28 flex justify-center text-2xl underline">
+        <p>Welcome to keyTest lets check your keyboard if working good</p>
+     </div>
+     <footer class="w-[100%] absolute bottom-0 flex justify-center ">
+        <p class="text-black font-medium">&copy;2023-2024</p>
+     </footer>
+</body>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+ <script>
+document.addEventListener('keyup', (ev) => {
+    console.log(ev)
+    const button = document.querySelectorAll('button');
+    const sub = document.querySelector('#numsub');
+    const keycode = { 'Escape': 0, 'F1': 1, 'F2': 2, 'F3':3, 'F4': 4, 'F5': 5, 'F6': 6, 'F7':7, 'F8':8, 'F9': 9, 'F10': 10, 'F11': 11, 'F12':12, 'PrintScreen':13, 'ScrollLock':14,
+                  'Pause':15, 'Backquote':16, 'Digit1': 17, 'Digit2': 18, 'Digit3':19, 'Digit4': 20, 'Digit5': 21, 'Digit6': 22, 'Digit7':23, 'Digit8':24, 'Digit9': 25, 'Digit0': 26,
+                  'Minus':27 , 'Equal':28, 'Backspace':29, 'Insert':30, 'Home':31, 'PageUp':32, 'NumLock':33, 'NumpadDivide':34, 'NumpadMultiply':35, 'NumpadSubtract':36, 
+                  'Tab':37, 'KeyQ':38, 'KeyW':39, 'KeyE':40, 'KeyR':41, 'KeyT':42, 'KeyY':43, 'KeyU':44, 'KeyI':45, 'KeyO':46, 'KeyP':47, 'BracketLeft':48, 'BracketRight':49,
+                  'Backslash':50, 'Delete':51, 'End':52, 'PageDown':53, 'Numpad7':54, 'Numpad8':55, 'Numpad9':56, 'NumpadAdd':57, 'CapsLock':58, 'KeyA':59, 'KeyS':60,
+                  'KeyD':61, 'KeyF':62, 'KeyG':63, 'KeyH':64, 'KeyJ':65, 'KeyK':66, 'KeyL':67, 'Semicolon':68, 'Quote':69, 'Enter':70, 'Numpad4':71, 'Numpad5':72, 'Numpad6':73,
+                  'ShiftLeft':74, 'KeyZ':75, 'KeyX':76, 'KeyC':77, 'KeyV':78, 'KeyB':79, 'KeyN':80, 'KeyM':81, 'Comma':82, 'Period':83, 'Slash':84, 'ShiftRight':85, 'ArrowUp':86,
+                  'Numpad1':87, 'Numpad2':88, 'Numpad3':89, 'NumpadEnter':90, 'ControlLeft':91, 'MetaLeft':92, 'AltLeft':93, 'Space':94, 'AltRight':95, 'ContextMenu':97, 'ControlRight':98,
+                  'ArrowLeft':99, 'ArrowDown':100, 'ArrowRight':101, 'Numpad0':102, 'NumpadDecimal':103};
+    const index = keycode[ev.code];
+    if (index !== null) {
+        button[index].classList.add('click');
+        setTimeout(() => button[index].classList.remove('click'), 3000);
+    } 
+});
+ </script>
+</html>
